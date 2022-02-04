@@ -1,0 +1,85 @@
+.lb01OuterContainer {
+  border: 0.1rem solid var(--container-border);
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 15px var(--container-shadow);
+  flex: 0 0 25%;
+  max-height: 80vh;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgb(247, 238, 238);
+  transition: all 1s ease-in;
+}
+
+.lb01OuterContainer :hover {
+
+  transform: translateX(0vh);
+}
+
+
+.lb01UsersContainer {
+  height: calc(80vh - 100px);
+  overflow-y: scroll;
+    width: 100%;
+}
+
+.lb01UserContainer {
+  align-items: center;
+  display: flex;
+
+}
+
+.lb01UserContainer img {
+  flex: 0 0 50px;
+  height: 50px;
+  margin-bottom: -1rem;
+  vertical-align: baseline;
+  width: 50px;
+  filter: grayscale(100%);
+}
+
+.lb01UserName {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin: 0.5rem auto 0;
+}
+
+.lb01User {
+  margin-left: 10%;
+  white-space: nowrap;
+}
+
+.lb01UserDetails {
+  font-size: 1rem;
+  margin: 0.4rem auto 0;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.lb01OuterContainer hr {
+  opacity: 0.5;
+  width: 80%;
+}
+
+@media (max-width: 932px) {
+
+  .lb01OuterContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    flex-basis: 100%;
+    max-height: 100vh;
+    z-index: 1000
+  }
+
+  .lb01OuterContainerNav {
+    transform: translateX(-120vh);
+  }
+
+  .lb01UserContainer {
+    margin-top: 10px;
+    box-shadow: 3px 4px 10px var(--boxes-shadow-green) inset;
+  }
+
+
+}

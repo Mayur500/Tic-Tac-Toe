@@ -1,0 +1,175 @@
+.ggb01Container {
+  border: 0.1rem solid var(--container-border);
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 15px var(--container-shadow);
+  flex: 0 0 60%;
+  max-height: 80vh;
+  min-width: 304px;
+  padding: 1rem;
+}
+
+.gb01Header {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.gb01OuterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gb01PlayerDetails {
+  align-self: center;
+  color: var(--primary-blue);
+  font-size: 4rem;
+  font-weight: 900;
+  min-width: 120px;
+  text-align: center;
+}
+
+.gb01PlayerDetails p {
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 120px;
+  overflow: hidden;
+  padding-bottom: 0.1rem;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.gb01Container {
+  display: grid;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+  margin: 0;
+  max-height: 304px;
+  max-width: 304px;
+  padding-bottom: 2rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 0 0 30px rgb(0, 208, 156) inset, 0 0 10px #5e638a;
+}
+
+.gb01Squares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid#000000;
+  color: #5367ff;
+  cursor: pointer;
+  font-size: 4rem;
+  font-weight: 900;
+  height: 100px;
+}
+
+.gb01Squares:nth-child(1),
+.gb01Squares:nth-child(2),
+.gb01Squares:nth-child(3) {
+  border-top: 0;
+}
+
+.gb01Squares:nth-child(3n+1) {
+  border-left: 0;
+}
+
+.gb01Squares:nth-child(3n+3) {
+  border-right: 0;
+}
+
+.gb01Squares:nth-child(7),
+.gb01Squares:nth-child(8),
+.gb01Squares:nth-child(9) {
+  border-bottom: 0;
+  height: 104px;
+}
+
+.gb01border {
+  box-shadow: 0px 15px 28px var(--gameBoard-square) inset;
+}
+
+
+.gb01UserIcon {
+
+  filter: grayscale(100%);
+}
+
+.gb01ButtonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+
+
+.gb01Buttons {
+  margin: 0.6rem;
+  background-color: var(--submitButton-green);
+  font-weight: bolder;
+  font-size: 20px;
+  transition: all 0.5s linear;
+}
+
+.gb01Buttons:active, .gb01Buttons:hover {
+  transform: scale(0.95);
+}
+
+.gb01Buttons-undo {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: none !important;
+  transform: scale(1) !important;
+}
+
+@media (max-width: 992px) {
+
+  .ggb01Container {
+    max-height: 95vh;
+  }
+
+  .gb01PlayerDetails {
+    margin-top: 15rem;
+    flex-basis: 50%;
+    order: 1;
+    box-shadow: 0px 15px 28px white inset;
+  }
+
+  .gb01UserIcon {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .gb01ButtonsContainer {
+    margin-top: 1rem;
+  }
+
+  .gb01UserIcon .gb01border{
+    box-shadow: 0px 15px 28px var(--gameBoard-square) inset
+  }
+
+}
+
+@media (max-width: 632px) {
+  .gb01Container {
+    flex-basis: 100%;
+  }
+
+  .ggb01Container {
+    max-height: fit-content;
+    flex-basis: 100%;
+
+  }
+
+  .gb01PlayerDetails {
+    margin-top: 0rem;
+
+  }
+
+  .gb01UserIcon {
+    width: 5vh;
+    height: 5vh;
+  }
+}

@@ -1,0 +1,66 @@
+.dm01Form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dm01FContainer {
+  font-size: 1rem;
+  flex: 0 0 100%;
+  margin: 1rem 0;
+  position: relative;
+
+}
+
+.m01Container {
+  box-shadow: 0px 0px 100px rgb(245, 245, 245) inset, 0px 0px 20px var(--boxes-shadow-green);
+
+}
+
+.dm01FContainer:last-child {
+  display: flex;
+}
+
+.details-modal-error {
+  text-align: center;
+  color: rgb(216, 23, 23);
+}
+
+.dm01FContainer .dm01TextFLabel {
+  background-color: var(--white);
+  color: var(--primary-blue);
+  font-weight: 500;
+}
+
+.dm01FContainer input[type='text'] {
+
+  border: 0.1rem solid var(--light-grey);
+  border-radius: 0.4rem;
+  margin: 8px auto;
+  padding: 0.8rem 0.2rem 0.8rem 1rem;
+  width: 100%;
+}
+
+.dm01FContainer input[type='text']:focus {
+  border: 0.15rem solid var(--primary-blue);
+  outline: 0;
+  padding-top: 0.7rem;
+}
+
+.dm01SubmitButton {
+
+  margin-top: 1rem;
+  margin: 0 auto;
+  transition: 0.2s all;
+  padding: 15px 60px;
+  background-color: var(--submitButton-green);
+  font-weight: bolder;
+  font-size: 20px;
+
+
+
+}
+
+.dm01SubmitButton:active, .dm01SubmitButton:hover {
+  transform: scale(0.95);
+}
