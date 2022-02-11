@@ -49,6 +49,7 @@ const ResultsModal = () => {
 
   return (
     <>
+    <div className="mo1BackDrop"></div>
       <div className='m01OuterContainer'>
         <div className='m01Container'>
           <h3 className='m01Heading'>

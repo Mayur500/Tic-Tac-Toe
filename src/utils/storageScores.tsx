@@ -3,7 +3,7 @@ import {
 } from '../types/types';
 
 const saveScores = (matchData: leaderboardUserDataType) => {
-  const usersLocalData = localStorage.getItem('Leaderboard');
+  const usersLocalData = localStorage.getItem('leaderboard');
   let parseData: leaderboardUserDataType[] = [];
   if (usersLocalData !== null) {
     parseData = JSON.parse(usersLocalData);
@@ -16,7 +16,7 @@ const saveScores = (matchData: leaderboardUserDataType) => {
     };
     parseData.push(newmatchData);
 
-  localStorage.setItem('Leaderboard', JSON.stringify(parseData));
+  localStorage.setItem('leaderboard', JSON.stringify(parseData));
   return parseData;
 }
 export default saveScores;

@@ -5,8 +5,8 @@ import {
 import storageScores from '../../utils/storageScores';
 
 let localLeaderboard: leaderboardUserDataType[] = [];
-if (localStorage.getItem('Leaderboard') !== null) {
-  localLeaderboard = [...JSON.parse(localStorage.getItem('Leaderboard') as string)]
+if (localStorage.getItem('leaderboard') !== null) {
+  localLeaderboard = [...JSON.parse(localStorage.getItem('leaderboard') as string )]
 }
 
 const initialState: usersRankingDataType = {

@@ -6,7 +6,7 @@ import DetailsModal from '../../components/DetailsModal/detailsModal';
 import ResultsModal from '../../components/ResultsModal/resultsModal';
 import NavBar from '../../components/NavBar/navBar';
 import { useAppSelector } from '../../store/hooks';
-import BackDrop from '../../ui/BackDrop/Backdrop';
+import BackDrop from '../../ui/BackDrop/backdrop';
 import { useEffect, useState } from 'react';
 
 const Home = () => {
